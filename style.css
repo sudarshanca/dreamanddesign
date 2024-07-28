@@ -8,9 +8,11 @@
 }
 
 :root {
-  --blue: #1e90ff;
+  --blue: #37b2c5;
+  --orange: #ff542c;
   --white: #ffffff;
   --black: #000;
+
 }
 
 /* -------------------------------------------
@@ -45,9 +47,15 @@ header.active {
 
 .nav-items ul li a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--blue);
   font-size: 20px;
   font-weight: 500;
+}
+.nav-items .nav-link:hover {
+  color: var(--orange) !important;
+}
+.nav-items .nav-link:focus {
+  color: var(--blue);
 }
 
 
@@ -107,6 +115,9 @@ header.active {
     align-items: start;
     padding: 1rem;
   }
+  .nav-link {
+    text-align: center;
+  }
 
   .nav-items ul {
     flex-direction: column;
@@ -138,15 +149,26 @@ header.active {
 }
 
 /* scroll spy */
-.nav-link.active {
-  background-color: #1e90ff;
+.nav-items .nav-link {
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.nav-items .nav-link.active {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 20px;
-  border-bottom: 3px solid;
+.nav-items .nav-link::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: var(--orange);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.nav-items .nav-link.active::after {
+  width: 60%;
 }
 
 
@@ -181,14 +203,14 @@ buttons end
 ------------------------------------------- */
 
 .button1 {
-  padding: .5rem 1rem;
+  padding: .3rem .7rem;
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid #252525;
+  border: 2px solid var(--orange);
   overflow: hidden;
   border-radius: 30px;
-  color: #333;
+  color: var(--orange);
   transition: all 0.5s ease-in-out;
 }
 
@@ -203,8 +225,8 @@ buttons end
   position: absolute;
   left: 0;
   top: 0;
-  transition: all 0.5s ease-in-out;
-  background-color: #333;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--blue);
   border-radius: 30px;
   visibility: hidden;
   height: 10px;
@@ -213,9 +235,9 @@ buttons end
 }
 
 .button1:hover {
-  box-shadow: 1px 1px 10px #252525;
+  box-shadow: 1px 1px 10px var(--blue);
   color: #fff;
-  border: none;
+  border: 2px solid transparent;
 }
 
 .type1:hover::after {
