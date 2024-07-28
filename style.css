@@ -8,6 +8,17 @@
   font-family: "inter", sans-serif;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  height: -webkit-fill-available;
+}
+
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
@@ -17,18 +28,20 @@
 /* -------------------------------------------
 header starts
 ------------------------------------------- */
-header{
+header {
   position: sticky;
   top: 0;
   background-color: var(--white);
 }
+
 header.active {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
-   width: 100px;
+  width: 100px;
 }
+
 .nav-items {
   display: flex;
   align-items: center;
@@ -41,7 +54,8 @@ header.active {
   gap: .5rem;
   margin-bottom: 0;
 }
-.nav-items ul li a{
+
+.nav-items ul li a {
   text-decoration: none;
   color: var(--black);
   font-size: 20px;
@@ -74,10 +88,12 @@ header.active {
   transform-origin: center;
   width: 33px;
 }
+
 .menu-icon.active span:nth-child(2) {
   opacity: 0;
   visibility: hidden;
 }
+
 .menu-icon.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
   width: 33px;
@@ -88,6 +104,7 @@ header.active {
   .menu-icon {
     display: flex;
   }
+
   .nav-items {
     position: fixed;
     transform: translateX(500px);
@@ -102,21 +119,25 @@ header.active {
     align-items: start;
     padding: 1rem;
   }
+
   .nav-items ul {
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
     margin-top: 20%;
   }
+
   .nav-items.active {
     transform: translateX(0px);
   }
+
   .nav-black-bg {
     display: none;
     transition: all 0.3 ease;
     opacity: 0;
   }
- .nav-black-bg.active {
-    display:  block !important;
+
+  .nav-black-bg.active {
+    display: block !important;
     opacity: 1;
     position: fixed;
     bottom: 0;
@@ -125,15 +146,15 @@ header.active {
     right: 0;
     background-color: #000000bb;
   }
-  
+
 }
 
 /* scroll spy */
-.nav-link.active{
+.nav-link.active {
   background-color: #1e90ff;
 }
 
-.nav-items .nav-link.active{
+.nav-items .nav-link.active {
   text-decoration: none;
   color: var(--black);
   font-size: 20px;
@@ -144,6 +165,27 @@ header.active {
 /* -------------------------------------------
 header ends
 ------------------------------------------- */
+
+
+/* -------------------------------------------
+section1 starts
+------------------------------------------- */
+
+.main {
+  flex-grow: 1;
+}
+
+/* -------------------------------------------
+section1 ends
+------------------------------------------- */
+
+
+
+
+
+
+
+
 /* -------------------------------------------
 buttons end
 ------------------------------------------- */
