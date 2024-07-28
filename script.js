@@ -7,6 +7,7 @@ function headerSidebar() {
   menuIcon.classList.toggle('active');
   navBlackBg.classList.toggle('active');
   backgroundSidebar.classList.toggle('active');
+  menuIcon.classList.remove('active');
 }
 
 // header scroll effect

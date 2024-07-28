@@ -153,6 +153,9 @@ header.active {
   position: relative;
   transition: all 0.3s ease;
 }
+.nav-items .nav-link.nav-link.active {
+ color: var(--orange);
+}
 
 .nav-items .nav-link::after {
   content: "";
