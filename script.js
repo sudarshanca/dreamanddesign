@@ -18,5 +18,23 @@ window.addEventListener('scroll', function() {
   } else {
     header.classList.remove('active');
   }
+
+  const backToTop = document.querySelector('.back-to-top');
+  if (window.scrollY > 1000) {
+    backToTop.classList.add('active');
+  } else {
+    backToTop.classList.remove('active');
+  }
 });
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  })};
+
+
+
+
+
+
 
