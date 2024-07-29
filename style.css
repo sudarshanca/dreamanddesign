@@ -22,6 +22,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--white);
+  z-index: 999;
 }
 
 header.active {
@@ -184,8 +185,10 @@ header ends
 section1 starts
 ------------------------------------------- */
 
-.section {
-  min-height: 100dvh;
+@media (max-width:767px)  {
+  .section1 .hero-div {
+   gap: 3rem;
+  }
 }
 /* -------------------------------------------
 section1 ends
@@ -286,6 +289,33 @@ buttons end
 
 /* -------------------------------------------
 buttons ends
+------------------------------------------- */
+/* -------------------------------------------
+animation starts
+------------------------------------------- */
+.section1 {
+  opacity: 0;
+  transform: translatey(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.section1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.animate-right {
+  opacity: 0;
+  transform: translatex(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-right.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* -------------------------------------------
+animation ends
 ------------------------------------------- */
 /* -------------------------------------------
 loader starts
