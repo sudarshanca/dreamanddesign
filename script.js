@@ -32,12 +32,38 @@ function scrollToTop() {
       behavior: "smooth"
   })};
 
+// portfolio filter 
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('portfolioModalLabel');
+    const modalDescription = document.getElementById('modalDescription');
 
+    // Filter items
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            portfolioItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.classList.remove('d-none');
+                } else {
+                    item.classList.add('d-none');
+                }
+            });
+        });
+    });
 
+    // Modal functionality
+    document.querySelectorAll('.portfolio-img').forEach(img => {
+        img.addEventListener('click', () => {
+            const title = img.getAttribute('data-title');
+            const description = img.getAttribute('data-description');
+            const imageSrc = img.getAttribute('data-image');
 
-
-
-
-
-
-
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalImage.src = imageSrc;
+        });
+    });
+});

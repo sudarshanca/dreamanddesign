@@ -260,7 +260,7 @@ section starts
 
 /* Feature Box
 ---------------------*/
-.feature-box-1 {
+.service-box {
   padding: 32px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   margin: 15px 0;
@@ -275,7 +275,7 @@ section starts
   top: 0;
 }
 
-.feature-box-1 .icon {
+.service-box .icon {
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -286,17 +286,17 @@ section starts
   margin-bottom: 22px;
   font-size: 27px;
 }
-.feature-box-1 .icon i {
+.service-box .icon i {
   line-height: 70px;
 }
-.feature-box-1 h5 {
+.service-box h5 {
   color: var(--black);
   font-weight: 600;
 }
-.feature-box-1 p {
+.service-box p {
   margin: 0;
 }
-.feature-box-1:after {
+.service-box:after {
   content: "";
   position: absolute;
   top: 0;
@@ -310,33 +310,33 @@ section starts
   background: var(--blue);
   z-index: -1;
 }
-.feature-box-1:hover {
+.service-box:hover {
   top: -5px;
 }
-.feature-box-1:hover h5 {
+.service-box:hover h5 {
   color: #ffffff;
 }
-.feature-box-1:hover p {
+.service-box:hover p {
   color: rgba(255, 255, 255, 0.8);
 }
-.feature-box-1:hover:after {
+.service-box:hover:after {
   width: 100%;
   height: 100%;
   border-radius:  10px 10px 10px 10px;
   left: 0;
   right: auto;
-  -moz-transition: ease all 0.5s;
-  -o-transition: ease all 0.5s;
-  -webkit-transition: ease all 0.5s;
-  transition: ease all 0.5s;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
 }
 .section3 .section {
     position: relative;
 }
-.section-title {
+.service-title {
     padding-bottom: 45px;
 }
-.section-title h2 {
+.service-title h2 {
     font-weight: 700;
     color: var(--blue);
     font-size: 45px;
@@ -346,6 +346,16 @@ section starts
 }
 
 /* service ends */
+
+
+/* portfolio starts */
+
+
+.filter-btn.active {
+  background-color: #007bff; /* Primary color background */
+  color: #fff; /* White text color */
+}
+/* portfolio ends */
 /* -------------------------------------------
 section ends
 ------------------------------------------- */

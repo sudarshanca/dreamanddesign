@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
+    <script src="https://kit.fontawesome.com/d887478cd5.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="back-to-top" onclick="scrollToTop()"> 
@@ -86,7 +87,7 @@
       <div class="py-5 container">
           <div class="row">
               <div class="col-lg-6">
-                  <div class="section-title">
+                  <div class="service-title">
                       <h2>What I Do</h2>
                       <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
                   </div>
@@ -95,7 +96,7 @@
           <div class="row">
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-desktop"></i>
                       </div>
@@ -108,7 +109,7 @@
               <!-- / -->
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-user"></i>
                       </div>
@@ -121,7 +122,7 @@
               <!-- / -->
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-comment"></i>
                       </div>
@@ -134,7 +135,7 @@
               <!-- / -->
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-image"></i>
                       </div>
@@ -147,7 +148,7 @@
               <!-- / -->
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-th"></i>
                       </div>
@@ -160,7 +161,7 @@
               <!-- / -->
               <!-- feaure box -->
               <div class="col-sm-6 col-lg-4">
-                  <div class="feature-box-1">
+                  <div class="service-box">
                       <div class="icon">
                           <i class="fa fa-cog"></i>
                       </div>
@@ -179,7 +180,65 @@
 
   <section id="scrollspyHeading4" class="section ">
     <!-- Content for Portfolio section -->
-    
+    <section id="portfolio" class="portfolio-section py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4">Our Portfolio</h2>
+            <!-- Filter Buttons -->
+            <div class="d-flex justify-content-center mb-4">
+                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="all">All</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="web">Web Design</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="app">App Development</button>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 portfolio-item" data-category="web">
+                    <div class="card h-100">
+                        <img src="path/to/image1.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 1" data-description="Brief description of the project." data-image="path/to/image1.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 1</h5>
+                            <p class="card-text">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="graphic">
+                    <div class="card h-100">
+                        <img src="path/to/image2.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 2" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 2" data-description="Brief description of the project." data-image="path/to/image2.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 portfolio-item" data-category="app">
+                    <div class="card h-100">
+                        <img src="path/to/image3.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 3" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 3" data-description="Brief description of the project." data-image="path/to/image3.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Project Image">
+                    <p id="modalDescription">Project description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
   </section>
 
   <section id="scrollspyHeading5" class="section ">
