@@ -355,6 +355,35 @@ section starts
   background-color: #007bff; /* Primary color background */
   color: #fff; /* White text color */
 }
+
+.portfolio-img {
+  cursor: pointer;
+  aspect-ratio: 16/13;
+  max-height: 70vh;
+  object-fit: contain;
+}
+.custom-modal-body {
+  padding: 0;
+}
+.custom-modal-content {
+  border: none;
+  box-shadow: none;
+}
+.modal-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.modal-navigation button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
 /* portfolio ends */
 /* -------------------------------------------
 section ends

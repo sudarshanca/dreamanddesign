@@ -180,64 +180,68 @@
 
   <section id="scrollspyHeading4" class="section ">
     <!-- Content for Portfolio section -->
-    <section id="portfolio" class="portfolio-section py-5 bg-light">
-        <div class="container">
-            <h2 class="display-4">Our Portfolio</h2>
-            <!-- Filter Buttons -->
-            <div class="d-flex justify-content-center mb-4">
-                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="all">All</button>
-                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="web">Web Design</button>
-                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="graphic">Graphic Design</button>
-                <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="app">App Development</button>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4 portfolio-item" data-category="web">
-                    <div class="card h-100">
-                        <img src="path/to/image1.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 1" data-description="Brief description of the project." data-image="path/to/image1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title 1</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 portfolio-item" data-category="graphic">
-                    <div class="card h-100">
-                        <img src="path/to/image2.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 2" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 2" data-description="Brief description of the project." data-image="path/to/image2.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title 2</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 portfolio-item" data-category="app">
-                    <div class="card h-100">
-                        <img src="path/to/image3.jpg" class="card-img-top portfolio-img" alt="Portfolio Item 3" data-bs-toggle="modal" data-bs-target="#portfolioModal" data-title="Project Title 3" data-description="Brief description of the project." data-image="path/to/image3.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title 3</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more portfolio items as needed -->
-            </div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Our Portfolio</h2>
+        <!-- Filter Buttons -->
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="all">All</button>
+            <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="web">Web Design</button>
+            <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="graphic">Graphic Design</button>
+            <button class="btn btn-outline-primary mx-2 filter-btn" data-filter="app">App Development</button>
         </div>
-    </section>
+        <div class="row g-4">
+            <div class="col-md-4 portfolio-item" data-category="web">
+                <div class="card h-100">
+                    <img src="images/Graphic_Design_img-1.webp" class="card-img-top portfolio-img" alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 1</h5>
+                        <p class="card-text">Brief description of the project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item" data-category="graphic">
+                <div class="card h-100">
+                    <img src="images/home-poster.avif" class="card-img-top portfolio-img" alt="Portfolio Item 2" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 2</h5>
+                        <p class="card-text">Brief description of the project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item" data-category="app">
+                <div class="card h-100">
+                    <img src="images/Hero-BG-PA.avif" class="card-img-top portfolio-img" alt="Portfolio Item 3" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 3</h5>
+                        <p class="card-text">Brief description of the project.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </div>
+</section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModalLabel">Project Title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Modal -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+
+            <div class="modal-body custom-modal-body">
+                <div id="modalContent">
+                    <!-- Dynamic content will be inserted here -->
                 </div>
-                <div class="modal-body">
-                    <img src="" id="modalImage" class="img-fluid" alt="Project Image">
-                    <p id="modalDescription">Project description goes here.</p>
+                <div class="modal-navigation">
+                    <button id="prevButton">&lt;</button>
+                    <button id="nextButton">&gt;</button>
                 </div>
+            
             </div>
         </div>
     </div>
+</div>
 
   </section>
 

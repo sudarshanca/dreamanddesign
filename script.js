@@ -33,37 +33,64 @@ function scrollToTop() {
   })};
 
 // portfolio filter 
+
 document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    const modalImage = document.getElementById('modalImage');
-    const modalTitle = document.getElementById('portfolioModalLabel');
-    const modalDescription = document.getElementById('modalDescription');
+  const portfolioItems = Array.from(document.querySelectorAll('.portfolio-item'));
+  const modalContent = document.getElementById('modalContent');
+  let currentIndex = -1;
 
-    // Filter items
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-            portfolioItems.forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                    item.classList.remove('d-none');
-                } else {
-                    item.classList.add('d-none');
-                }
-            });
-        });
-    });
+  // Show modal with content
+  document.querySelectorAll('.portfolio-img').forEach((img, index) => {
+      img.addEventListener('click', () => {
+          currentIndex = index;
+          updateModalContent(index);
+      });
+  });
 
-    // Modal functionality
-    document.querySelectorAll('.portfolio-img').forEach(img => {
-        img.addEventListener('click', () => {
-            const title = img.getAttribute('data-title');
-            const description = img.getAttribute('data-description');
-            const imageSrc = img.getAttribute('data-image');
+  // Navigation buttons
+  document.getElementById('prevButton').addEventListener('click', () => {
+      if (currentIndex > 0) {
+          currentIndex--;
+          updateModalContent(currentIndex);
+      }
+  });
 
-            modalTitle.textContent = title;
-            modalDescription.textContent = description;
-            modalImage.src = imageSrc;
-        });
-    });
+  document.getElementById('nextButton').addEventListener('click', () => {
+      if (currentIndex < portfolioItems.length - 1) {
+          currentIndex++;
+          updateModalContent(currentIndex);
+      }
+  });
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+          filterItems(filter);
+      });
+  });
+
+  function filterItems(filter) {
+      portfolioItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.classList.remove('d-none');
+          } else {
+              item.classList.add('d-none');
+          }
+      });
+  }
+
+  function updateModalContent(index) {
+      const portfolioItem = portfolioItems[index];
+      const content = portfolioItem.innerHTML;
+
+      modalContent.innerHTML = content;
+
+      // Remove Bootstrap attributes from modal content to avoid conflicts
+      const modalImage = modalContent.querySelector('.card-img-top');
+      if (modalImage) {
+          modalImage.removeAttribute('data-bs-toggle');
+          modalImage.removeAttribute('data-bs-target');
+      }
+  }
 });
