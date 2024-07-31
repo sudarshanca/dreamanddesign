@@ -33,31 +33,6 @@ function scrollToTop() {
   })};
 
 
-// scripts.js
-document.addEventListener('DOMContentLoaded', function () {
-  const contents = document.querySelectorAll('.section');
-
-  function checkVisibility() {
-      contents.forEach(content => {
-          const rect = content.getBoundingClientRect();
-          const elementHeight = rect.height;
-          const elementTop = rect.top;
-          const elementBottom = rect.bottom;
-
-          // Check if the element is 50% in the viewport
-          if ((elementTop + elementHeight * 0.5 < window.innerHeight) && (elementBottom - elementHeight * 0.5 > 0)) {
-              content.classList.add('visible');
-          }
-      });
-  }
-
-  window.addEventListener('scroll', checkVisibility);
-
-  // Initial check in case elements are already in view on page load
-  checkVisibility();
-});
-
-
 
 
 
