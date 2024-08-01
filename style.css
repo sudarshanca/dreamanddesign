@@ -107,7 +107,7 @@ header.active {
 
   .nav-items {
     position: fixed;
-    transform: translateX(500px);
+    transform: translateX(100%);
     bottom: 0;
     top: 0;
     right: 0;
@@ -347,7 +347,6 @@ section starts
 
 /* service ends */
 
-
 /* portfolio starts */
 
 
@@ -385,6 +384,88 @@ section starts
   padding: 0.5rem;
 }
 /* portfolio ends */
+
+/* review slider starts */
+
+
+.your-slider img {
+  width: 150px;    
+  height: auto;
+}
+
+.slick-slide {
+  text-align: center;  /* Center content */
+}
+
+.slick-dots {
+  bottom: 10px;   /* Position dots at the bottom */
+}
+/* Add gap between slides */
+.testimonial-slider .slick-slide {
+  padding: 0 10px;  /* Adjust the value as needed */
+}
+
+/* Adjust container to prevent horizontal overflow */
+.testimonial-slider .slick-list {
+  margin: 0 -10px;  /* Negative value to counteract the padding */
+}
+
+
+
+.testimonial-slider {
+  margin: 10px;
+}
+.testimonial-card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: .5rem;
+}
+
+.testimonial-wrapper img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 1px solid #c3c1c1;
+}
+.list-inline .fa-star,
+.list-inline .fa-star-o {
+  color: gold;
+}
+.testimonial-wrapper .media {
+  display: flex;
+  gap: 1rem;padding: 0 1rem;
+}
+.testimonial-wrapper .media-body {
+  margin: auto;
+}
+
+.testimonial {
+  color: var(--white);
+  position: relative;
+  padding: 15px;
+  background: var(--blue);
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.testimonial::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: var(--blue);
+  border: 1px solid #efefef;
+  border-width: 0 0 1px 1px;
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  transform: rotateZ(-46deg);
+}
+
+/* review slider ends */
 /* -------------------------------------------
 section ends
 ------------------------------------------- */
