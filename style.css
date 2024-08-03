@@ -203,9 +203,13 @@ header ends
 section starts
 ------------------------------------------- */
 /* all sections srarts*/
-.section{
-  margin: 1rem;
+.section1{
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
 }
+
+
 
 
 /* all sections ends */
@@ -476,6 +480,11 @@ section starts
   border: 0;
   border-radius: 10px;
 }
+.contact textarea {
+  min-height: 200px;
+  height: auto;
+  max-height: 500px;
+}
 
 .contact button.btn {
   background: var(--orange);
@@ -552,11 +561,21 @@ footer .social-icons {
   font-size: 30px; /* adjust the size as needed */
   transition: color 0.3s;
 }
-.social-icons a.wa { color: #25D366; }
-.social-icons a.fb { color: #1877F2; }
-.social-icons a.tw { color: #1DA1F2; }
-.social-icons a.in { color: #E4405F; } /* Single color for Instagram */
-.social-icons a.yt { color: #FF0000; }
+.social-icons a.wa { scale: 1; color: #25D366; }
+.social-icons a.fb { scale: 1; color: #1877F2; }
+.social-icons a.tw { scale: 1; color: #1DA1F2; }
+.social-icons a.in { scale: 1; color: #E4405F; } /* Single color for Instagram */
+.social-icons a.yt { scale: 1; color: #FF0000; }
+.social-icons a.wa:focus { scale: 1.1; color: #25D366; }
+.social-icons a.fb:focus { scale: 1.1; color: #1877F2; }
+.social-icons a.tw:focus { scale: 1.1; color: #1DA1F2; }
+.social-icons a.in:focus { scale: 1.1; color: #E4405F; } /* Single color for Instagram */
+.social-icons a.yt:focus { scale: 1.1; color: #FF0000; }
+.social-icons a.wa:hover { scale: 1.1; color: #25D366; }
+.social-icons a.fb:hover { scale: 1.1; color: #1877F2; }
+.social-icons a.tw:hover { scale: 1.1; color: #1DA1F2; }
+.social-icons a.in:hover { scale: 1.1; color: #E4405F; } /* Single color for Instagram */
+.social-icons a.yt:hover { scale: 1.1; color: #FF0000; }
 
 .social-icons a:hover {
   color: #007bff; /* or any color you prefer for hover effect */

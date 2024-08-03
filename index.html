@@ -28,7 +28,7 @@
     <header class="px-3 py-2">
         <div class="d-flex gap-3 align-items-center justify-content-between">
             <div class="logo"><img src="./images/logo.png" alt=""></div>
-            <div id="menu-icon" class="menu-icon" onclick="headerSidebar()">
+            <div id="menu-icon" class="menu-icon " onclick="headerSidebar()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,7 +36,7 @@
             <div id="nav-black-bg" class="nav-black-bg" onclick="headerSidebar()"></div>
             <div id="nav-items" class="nav-items">
                 <ul id="navbar-example2" class="nav">
-                    <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
+                    <li class="nav-item"><a class="nav-link"  onclick="headerSidebar()"
                             href="#scrollspyHeading1">Home</a></li>
                     <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading2">About</a></li>
@@ -44,8 +44,8 @@
                             href="#scrollspyHeading3">Service</a></li>
                     <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading4">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
-                            href="#scrollspyHeading5">Work</a></li>
+             <!--        <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
+                            href="#scrollspyHeading5">Work</a></li> -->
                 </ul>
                 <a href="#contact" class="button1 type1">
                     <span href="#contact" class="btn-txt">Contact US</span>
@@ -53,10 +53,10 @@
             </div>
         </div>
     </header>
-      <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
     <section>
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-            data-bs-smooth-scroll="true" class="scrollspy-example rounded-2 p-3" tabindex="0">
+            data-bs-smooth-scroll="true" class="scrollspy-example rounded-2 p-3 pt-0" tabindex="0">
             <section id="scrollspyHeading1" class="section  section1">
                 <div class="my-md-5 container">
                     <div class="row hero-div">
@@ -64,16 +64,18 @@
                             <div class="hero-left d-flex flex-column justify-content-center  h-100 w-100">
                                 <div class="mb-3"><img src="./images/logo1.png" style="width: 30%;" alt=""></div>
                                 <h1 class="font-1">Full fill your Dreams with our Efforts</h1>
-                                <p class="font-2">We help our Clients by providing memorabel experience with our efforts</p>
+                                <p class="font-2">We help our Clients by providing memorabel experience with our efforts
+                                </p>
                                 <a href="#contact" class="button1 type1" style="width: fit-content;">
                                     <span href="#contact" class="btn-txt">Contact US</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6  d-flex align-items-center justify-content-center justify-content-md-end ">
-                     
+                        <div
+                            class="col-12 col-md-6  d-flex align-items-center justify-content-center justify-content-md-end ">
+
                             <img src="./images/hero-right-icon.png" style="width: 80%;" alt="">
-                     
+
                         </div>
                     </div>
                 </div>
@@ -82,7 +84,7 @@
 
             <section id="scrollspyHeading2" class="section  section2">
                 <!-- Content for About section -->
-                <div class="py-5 container about">
+                <div class="py-3 container about">
                     <div class="row">
                         <div class="col-md-6 left">
                             <img src="./images/Graphic_Design_img-1.webp" alt="About Image" class="img-fluid rounded">
@@ -94,7 +96,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
                                 dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
                                 Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-                          <!--   <a href="#!" class="btn btn-primary">Learn More</a> -->
+                            <!--   <a href="#!" class="btn btn-primary">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -103,8 +105,8 @@
 
             <section id="scrollspyHeading3" class="section">
                 <!-- Content for Portfolio section -->
-                <section class="section services-section" id="services">
-                    <div class="py-5 container">
+                <section class="section services-section" id="services" style="padding-top: 5rem;">
+                    <div class="py-3 container">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="service-title">
@@ -208,7 +210,7 @@
             <section id="scrollspyHeading4" class="section ">
                 <!-- Content for Portfolio section -->
                 <!-- Portfolio Section -->
-                <section id="portfolio" class="portfolio-section py-5">
+                <section id="portfolio" class="portfolio-section " style="padding-top: 5rem;">
                     <div class="container">
                         <h2 class="section-title text-center mb-5">Our Portfolio</h2>
                         <!-- Filter Buttons -->
@@ -276,130 +278,145 @@
                         </div>
                     </div>
                 </div>
-
+                <section class="py-3">
+                    <!-- Content for Work section -->
+                    <div class="testimonials">
+                        <!-- Add more slides as needed -->
+                        <!-- Single Starts -->
+                        <div class="item">
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
+                                    alt="">
+                                <div class="information">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Furkan Giray</p>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                                distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                                facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                            <div class="icon">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- Single Ends -->
+                        <!-- Single Starts -->
+                        <div class="item">
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
+                                    alt="">
+                                <div class="information">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Furkan Giray</p>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                                distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                                facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                            <div class="icon">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- Single Ends -->
+                        <!-- Single Starts -->
+                        <div class="item">
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
+                                    alt="">
+                                <div class="information">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Furkan Giray</p>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                                distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                                facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                            <div class="icon">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- Single Ends -->
+                        <!-- Single Starts -->
+                        <div class="item">
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
+                                    alt="">
+                                <div class="information">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Furkan Giray</p>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                                distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                                facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                            <div class="icon">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- Single Ends -->
+                        <!-- Single Starts -->
+                        <div class="item">
+                            <div class="profile">
+                                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
+                                    alt="">
+                                <div class="information">
+                                    <div class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Furkan Giray</p>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit
+                                distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam
+                                facilis doloribus maiores impedit ducimus cum accusamus.</p>
+                            <div class="icon">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <!-- Single Ends -->
+    
+    
+                    </div>
+                </section>
             </section>
 
-            <section>
-                <!-- Content for Work section -->
-                <div class="testimonials">
-                    <!-- Add more slides as needed -->
-                    <!-- Single Starts -->
-                    <div class="item">
-                        <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80" alt="">
-                            <div class="information">
-                                <div class="stars">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <p>Furkan Giray</p>
-                                <span>Web Developer</span>
-                            </div>
-                          </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam facilis doloribus maiores impedit ducimus cum accusamus.</p>
-                            <div class="icon">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                    <!-- Single Ends -->
-                    <!-- Single Starts -->
-                    <div class="item">
-                        <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80" alt="">
-                            <div class="information">
-                                <div class="stars">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <p>Furkan Giray</p>
-                                <span>Web Developer</span>
-                            </div>
-                          </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam facilis doloribus maiores impedit ducimus cum accusamus.</p>
-                            <div class="icon">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                    <!-- Single Ends -->
-                    <!-- Single Starts -->
-                    <div class="item">
-                        <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80" alt="">
-                            <div class="information">
-                                <div class="stars">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <p>Furkan Giray</p>
-                                <span>Web Developer</span>
-                            </div>
-                          </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam facilis doloribus maiores impedit ducimus cum accusamus.</p>
-                            <div class="icon">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                    <!-- Single Ends -->
-                    <!-- Single Starts -->
-                    <div class="item">
-                        <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80" alt="">
-                            <div class="information">
-                                <div class="stars">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <p>Furkan Giray</p>
-                                <span>Web Developer</span>
-                            </div>
-                          </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam facilis doloribus maiores impedit ducimus cum accusamus.</p>
-                            <div class="icon">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                    <!-- Single Ends -->
-                    <!-- Single Starts -->
-                    <div class="item">
-                        <div class="profile">
-                            <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80" alt="">
-                            <div class="information">
-                                <div class="stars">
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                </div>
-                                <p>Furkan Giray</p>
-                                <span>Web Developer</span>
-                            </div>
-                          </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita velit labore suscipit distinctio, officiis deserunt rem blanditiis ducimus. Voluptate quaerat assumenda qui veniam facilis doloribus maiores impedit ducimus cum accusamus.</p>
-                            <div class="icon">
-                                <i class="fa fa-quote-right" aria-hidden="true"></i>
-                            </div>
-                      </div>
-                    <!-- Single Ends -->
-          
-         
-                </div>
-            </section>
-            <section id="scrollspyHeading5" class="section ">
+           
+            <section id="scrollspyHeading5" class="section">
                 <section class="contact" id="contact">
-                    <div class="container">
+                    <div class="container " style="padding-top: 5rem;">
                         <div class="heading text-center">
                             <h2>Contact
                                 <span> Us </span>
@@ -421,7 +438,7 @@
                                         <i class="fas fa-mobile-alt"></i>
                                         <h4 class="d-inline-block">PHONE :
                                             <br>
-                                            <span>+12457836913 , +12457836913</span>
+                                            <span>+918317320962 , <!-- +918317320962 --></span>
                                         </h4>
                                     </div>
                                     <!-- Info-2 -->
@@ -442,11 +459,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-7">
+                            <div class="col-md-7 mt-4 mt-md-0">
 
-                                <form action="https://api.web3forms.com/submit" method="POST">
-                                       <!-- Replace with your Access Key -->
-                                        <input type="hidden" name="access_key" value="9c0d934f-ff6b-4553-b2da-a1f855d0bf9a">
+                                <form method="POST" id="form">
+                                    <!-- Replace with your Access Key -->
+                                    <input type="hidden" name="access_key" value="4872691c-d507-4472-8dc1-21f136606fbd">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <input type="text" name="name" class="form-control" placeholder="Name">
@@ -463,6 +480,7 @@
                                             placeholder="Message"></textarea>
                                     </div>
                                     <button class="btn btn-block" type="submit">Send Now!</button>
+                                    <div id="result"></div>
                                 </form>
                             </div>
                         </div>
@@ -480,37 +498,47 @@
                                 <img src="./images/logo.png" width="100" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 text-md-right">
+                        <div class="col-md-6 text-md-right mt-4 mt-md-0">
                             <ul class="list-unstyled social-icons">
-                                <li><a target="_blank" href="https://wa.me/+918317320962" class="wa"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100083288171590" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                               <!--  <li><a href="https://twitter.com/yourprofile" class="tw"><i class="fab fa-twitter"></i></a></li> -->
-                                <li><a target="_blank" href="https://www.instagram.com/dreamanddesign_official?igsh=amtvZzZwbnVwdmtl&utm_source=qr" class="in"><i class="fab fa-instagram"></i></a></li>
-                                <li><a target="_blank" href="https://www.youtube.com/channel/UCPiJnYVYPDEcqOi32ctuJhA" class="yt"><i class="fab fa-youtube"></i></a></li>
+                                <li>
+                                    <a target="_blank"
+                                        href="https://wa.me/+918317320962?text=Hi%20there,%20I'm%20interested%20in%20your%20services"
+                                        class="wa">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100083288171590"
+                                        class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                <!--  <li><a href="https://twitter.com/yourprofile" class="tw"><i class="fab fa-twitter"></i></a></li> -->
+                                <li><a target="_blank"
+                                        href="https://www.instagram.com/dreamanddesign_official?igsh=amtvZzZwbnVwdmtl&utm_source=qr"
+                                        class="in"><i class="fab fa-instagram"></i></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UCPiJnYVYPDEcqOi32ctuJhA"
+                                        class="yt"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
-                        
+
                     </div>
 
                     <div class="row mb-5">
                         <div class="col-md-6 ">
-                            <ul class="nav-links list-unstyled nav-left">
+                            <!--  <ul class="nav-links list-unstyled nav-left">
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="col-md-6 text-md-right">
                             <ul class="nav-links list-unstyled nav-right">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#scrollspyHeading1">Home</a></li>
+                                <li><a href="#scrollspyHeading2">About</a></li>
+                                <li><a href="#scrollspyHeading3">Service</a></li>
+                                <li><a href="#scrollspyHeading4">Portfolio</a></li>
+                               <!--  <li><a href="#scrollspyHeading5">Work</a></li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
-            <!--     <div class="copyright">
+                <!--     <div class="copyright">
                     <p><small>Copyright 2024. All Rights Reserved.</small></p>
                 </div> -->
             </footer>
@@ -560,6 +588,7 @@
             });
         });
     </script>
+
 
 
 
