@@ -189,8 +189,7 @@ section starts
 ------------------------------------------- */
 /* all sections srarts*/
 .section{
-  margin: .7rem;
-  margin-bottom: 100px;
+  margin: 1rem;
 }
 
 
@@ -350,10 +349,7 @@ section starts
 /* portfolio starts */
 
 
-.filter-btn.active {
-  background-color: #007bff; /* Primary color background */
-  color: #fff; /* White text color */
-}
+
 
 .portfolio-img {
   cursor: pointer;
@@ -424,7 +420,7 @@ section starts
 .testimonials .item .profile .information .stars i {color:#ffd832}
 .testimonials .item .profile .information p {font-size: 24px;margin: 0px auto 0px;color: #5A3733;font-weight: 900;line-height: 1;}
 .testimonials .item .profile .information span {color: #EB6D2F;font-weight: bold;margin-top: -4px;line-height: 1.6em;font-size: 14px;}
-.testimonials .item>p {margin-bottom: 15px;font-size: 16px;line-height: 1.6em;display: block;z-index: 2;font-style: italic;color: #5A3733;text-align: center;}
+.testimonials .item>p {margin-bottom: 15px;font-size: 16px;line-height: 1.6em;display: block;z-index: 2;font-style: italic;color: #5A3733;text-align: start;}
 .testimonials .item .icon {text-align: center;}
 .testimonials .item .icon i {font-size: 32px;color: #FFD832;}
 /* review slider ends */
@@ -432,7 +428,7 @@ section starts
 
 /* contact section starts */
 .contact {
-  padding: 130px 0;
+  padding: 30px 0;
 }
 
 .contact .heading h2 {
@@ -658,6 +654,33 @@ buttons end
  .back-to-top:disabled {
   cursor: auto;
   color: grey;
+ }
+ .filter-btn{
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: var(--blue);
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  padding: .5rem 0;
+  transition: all 0.3s ease;
+ }
+
+ .filter-btn::after {
+  position: absolute;
+   content: "";
+   height: 2px;
+   left: 0;
+   right: 0;
+   width: 0%;
+   margin: auto;
+   bottom: 0;
+   background-color: var(--orange);
+   transition: all 0.3s ease;
+ }
+ .filter-btn.active::after {
+  width: 80%;
  }
 
 /* -------------------------------------------

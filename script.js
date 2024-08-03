@@ -31,9 +31,6 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
-// portfolio filter
-
 document.addEventListener("DOMContentLoaded", () => {
   const portfolioItems = Array.from(
     document.querySelectorAll(".portfolio-item")
@@ -67,6 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Filter buttons
   document.querySelectorAll(".filter-btn").forEach((button) => {
     button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      // Add active class to the clicked button
+      button.classList.add("active");
+
       const filter = button.getAttribute("data-filter");
       filterItems(filter);
     });
