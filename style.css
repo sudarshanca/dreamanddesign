@@ -291,6 +291,7 @@ section starts
   -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
   top: 0;
+  height: 100%;
 }
 
 .service-box .icon {
@@ -362,7 +363,9 @@ section starts
     border-left: 5px solid var(--orange);
     padding-left: 15px;
 }
-
+.services-section  .row:last-child  > div {
+  margin-bottom: 1rem;
+}
 /* service ends */
 
 /* portfolio starts */
@@ -432,12 +435,13 @@ section starts
 .testimonials{position: relative; margin: 1rem; background-repeat: no-repeat;background-size: cover;padding:50px 0;font-family:'Poppins', sans-serif}
 .testimonials .title img {margin-top: -10px;}
 .testimonials .title p {margin: 0 0 10px;margin-bottom: 0;color: #5A3733;}
-.testimonials .item {background: #fff;padding: 50px 30px;border-radius:15px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);}
+.testimonials .item {background: #fff;padding: 50px 30px;border-radius:15px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); height: 100% !important;}
 .testimonials .item .profile {display:flex;padding-left: 15px;}
 .testimonials .item .profile img {border-radius: 100%;width:50px;height:50px;object-fit:cover}
 .testimonials .item .profile .information {padding-left:20px;margin-bottom:15px}
-.testimonials .item .profile .information .stars i {color:#ffd832}
-.testimonials .item .profile .information p {font-size: 24px;margin: 0px auto 0px;color: #5A3733;font-weight: 900;line-height: 1;}
+.testimonials .item .profile .information .stars {padding-left: 0; margin-left: 0; margin-bottom: .5rem; display: flex;}
+.testimonials .item .profile .information .stars i {color:#ffd832;}
+.testimonials .item .profile .information p {font-size: 24px;margin: 0px auto 0px;color: var(--blue);font-weight: 900;line-height: 1; display: block;}
 .testimonials .item .profile .information span {color: #EB6D2F;font-weight: bold;margin-top: -4px;line-height: 1.6em;font-size: 14px;}
 .testimonials .item>p {margin-bottom: 15px;font-size: 16px;line-height: 1.6em;display: block;z-index: 2;font-style: italic;color: #5A3733;text-align: start;}
 .testimonials .item .icon {text-align: center;}
@@ -521,10 +525,11 @@ section starts
   line-height: 1.4;
 }
 
-.contact .content .info h4 span {
+.contact .content .info h4 a {
   font-size: 13px;
   font-weight: 300;
   color: #999999;
+  text-decoration: none;
 }
 /* contact section ends */
 
