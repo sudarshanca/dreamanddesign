@@ -48,16 +48,16 @@
                     <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading5">Work</a></li>
                 </ul>
-                <button class="button1 type1">
-                    <span class="btn-txt">Get Started</span>
-                </button>
+                <a href="#contact" class="button1 type1">
+                    <span href="#contact" class="btn-txt">Get Started</span>
+                </a>
             </div>
         </div>
     </header>
 
     <section>
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-            data-bs-smooth-scroll="true" class="scrollspy-example rounded-2" style="overflow-x: hidden;" tabindex="0">
+            data-bs-smooth-scroll="true" class="scrollspy-example rounded-2 p-3" tabindex="0">
             <section id="scrollspyHeading1" class="section  section1">
                 <div class="my-md-5 container">
                     <div class="row hero-div">
@@ -66,9 +66,9 @@
                                 <div><img src="./images/logo1.png" style="width: 30%;" alt=""></div>
                                 <h1 class="font-1">Lorem ipsum dolor sit amet.</h1>
                                 <p class="font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel.</p>
-                                <button class="button1 type1" style="width: fit-content;">
-                                    <span class="btn-txt">Get Started</span>
-                                </button>
+                                <a href="#contact" class="button1 type1" style="width: fit-content;">
+                                    <span href="#contact" class="btn-txt">Get Started</span>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-md-6  d-flex align-items-center justify-content-center">
@@ -501,17 +501,17 @@
                         <div class="col-md-6 text-md-right">
                             <ul class="nav-links list-unstyled nav-right">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Our works</a></li>
                                 <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="copyright">
-                    <p><small>Copyright 2019. All Rights Reserved.</small></p>
-                </div>
+            <!--     <div class="copyright">
+                    <p><small>Copyright 2024. All Rights Reserved.</small></p>
+                </div> -->
             </footer>
         </div>
     </section>
@@ -530,7 +530,7 @@
                 dots: true,         // Show navigation dots
                 infinite: true,     // Infinite looping
                 speed: 300,         // Slide transition speed
-               // autoplay: true,
+                autoplay: true,
                 slidesToShow: 3,    // Number of slides to show at once
                 slidesToScroll: 1,  // Number of slides to scroll
                 responsive: [       // Responsive settings

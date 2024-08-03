@@ -414,7 +414,7 @@ section starts
 .slick-list {
   padding: 0 1rem; /* Add padding to the left and right of the entire slider to create space around the items */
 }
-.testimonials{position: relative;background-repeat: no-repeat;background-size: cover;padding:50px 0;font-family:'Poppins', sans-serif}
+.testimonials{position: relative; margin: 1rem; background-repeat: no-repeat;background-size: cover;padding:50px 0;font-family:'Poppins', sans-serif}
 .testimonials .title img {margin-top: -10px;}
 .testimonials .title p {margin: 0 0 10px;margin-bottom: 0;color: #5A3733;}
 .testimonials .item {background: #fff;padding: 50px 30px;border-radius:15px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);}
@@ -586,6 +586,7 @@ buttons end
   border-radius: 30px;
   color: var(--orange);
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 .btn-txt {
@@ -633,6 +634,7 @@ buttons end
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 9999;
  }
  .back-to-top.active {
   display: block;
