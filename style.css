@@ -407,6 +407,13 @@ section starts
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+.item {
+  margin: 1rem 1rem; /* Add margin to the left and right of each item */
+}
+
+.slick-list {
+  padding: 0 1rem; /* Add padding to the left and right of the entire slider to create space around the items */
+}
 .testimonials{position: relative;background-repeat: no-repeat;background-size: cover;padding:50px 0;font-family:'Poppins', sans-serif}
 .testimonials .title img {margin-top: -10px;}
 .testimonials .title p {margin: 0 0 10px;margin-bottom: 0;color: #5A3733;}
