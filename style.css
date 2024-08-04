@@ -801,16 +801,43 @@ loader starts
 animation starts
 ------------------------------------------- */
  @media (prefers-reduced-motion: no-preference) {
-  .about img {
-    scale: .8; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view() ;
+  p , h1, h2, h5, a, ul li, button{
+    scale: .8; 
+    opacity: 0;
+    animation:fade-in linear forwards;
+    animation-timeline: view(100px) ;
     animation-range: entry;
   }
   @keyframes fade-in {
      to { scale: 1; opacity: 1;}
   }
+ .about .right {
+  opacity: 0;
+  animation: side-fade linear forwards;
+  animation-timeline: view(100px) ;
+  animation-range: entry;
+  transform: translatey(100px);
+ }
+ @keyframes side-fade {
+  to { scale: 1; 
+       opacity: 1;
+       transform: translate(0px);
+  }
+}
+.hero-right-img {
+  animation: img-rotate linear forwards;
+  animation-timeline: view();
+  rotate: 330deg;
+  transition: rotate 2s ease, opacity 1s ease ;
+}
+@keyframes img-rotate {
+  to {
+    rotate: 0deg;
+  }
+}
+
 } 
+
 
 /* -------------------------------------------
 animation ends
