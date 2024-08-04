@@ -393,12 +393,23 @@ section starts
   cursor: pointer;
   object-fit: cover;
   width: 100%;
-  aspect-ratio: 16 / 13;
+  height: 100%;
   transition: all .3s ease;
 }
 .portfolio-img:hover {
    scale: 1.1;
 }
+.custom-modal-body .portfolio-img-box {
+  flex-grow: 1;
+}
+.custom-modal-body .portfolio-img {
+  object-fit:contain;
+}
+#modalContent >  div {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .custom-modal-body .portfolio-img:hover {
    scale: 1 !important;
@@ -417,6 +428,8 @@ section starts
 }
 .custom-modal-body {
   padding: 0;
+  height: 90vh !important;
+  overflow: hidden;
 }
 .custom-modal-content {
   border: none;
@@ -431,11 +444,21 @@ section starts
   transform: translateY(-50%);
 }
 .modal-navigation button {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: var(--orange);
   border: none;
   color: white;
   font-size: 1.5rem;
   padding: 0.5rem;
+  margin: .5rem;
+  border-radius: 50%;
+  width: 55px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-navigation button:focus , .modal-navigation button:hover{
+  background-color: var(--blue);
 }
 /* portfolio ends */
 
@@ -805,7 +828,7 @@ loader starts
 animation starts
 ------------------------------------------- */
  @media (prefers-reduced-motion: no-preference) {
-  p, h1, h2,h3, h6, h5, h6, ul li, .filter-btn, .about img , .services-section .col-sm-6{
+ .about img{
     scale: .8; 
     opacity: 0;
     animation:fade-in linear forwards;
