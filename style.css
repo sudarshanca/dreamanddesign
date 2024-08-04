@@ -370,14 +370,46 @@ section starts
 
 /* portfolio starts */
 
+.Portfolio-title h2{
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 45px;
+  margin: 0 0 15px;
+  border-left: 5px solid var(--orange);
+  padding-left: 15px;
+}
 
-
+.portfolio-img-box {
+  width: 100%;
+  aspect-ratio: 16/13;
+  overflow: hidden;
+}
 
 .portfolio-img {
   cursor: pointer;
-  aspect-ratio: 16/13;
-  max-height: 70vh;
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 13;
+  transition: all .3s ease;
+}
+.portfolio-img:hover {
+   scale: 1.1;
+}
+
+.custom-modal-body .portfolio-img:hover {
+   scale: 1 !important;
+}
+.card-body {
+  padding: .5rem 0;
+}
+.custom-modal-body .card-body {
+  position: absolute;
+    z-index: 111;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white !important;
 }
 .custom-modal-body {
   padding: 0;
@@ -704,6 +736,7 @@ buttons end
   position: relative;
   padding: .5rem 0;
   transition: all 0.3s ease;
+  width: fit-content;
  }
 
  .filter-btn::after {

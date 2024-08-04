@@ -48,7 +48,7 @@
                             href="#scrollspyHeading5">Work</a></li> -->
                 </ul>
                 <a href="#contact" class="button1 type1">
-                    <span href="#contact" class="btn-txt">Contact US</span>
+                    <span href="#contact" onclick="headerSidebar()" class="btn-txt">Contact US</span>
                 </a>
             </div>
         </div>
@@ -105,7 +105,7 @@
 
             <section id="scrollspyHeading3" class="section">
                 <!-- Content for Portfolio section -->
-                <section class="section services-section" id="services" style="padding-top: 5rem;">
+                <section class="section services-section" id="services" style="padding-top: 2rem;">
                     <div class="py-3 container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -203,11 +203,18 @@
             <section id="scrollspyHeading4" class="section ">
                 <!-- Content for Portfolio section -->
                 <!-- Portfolio Section -->
-                <section id="portfolio" class="portfolio-section " style="padding-top: 5rem;">
+                <section id="portfolio" class="portfolio-section " style="padding-top: 2rem;">
                     <div class="container">
-                        <h2 class="section-title text-center mb-5">Our Portfolio</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="Portfolio-title">
+                                    <h2 class="display-4">Portfolio</h2>
+                                    <p>Unlock the potential of your brand with strategic digital marketing solutions tailored to your business needs.</p>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Filter Buttons -->
-                        <div class="d-flex justify-content-center flex-md-row flex-column mb-4">
+                        <div class="d-flex flex-md-row flex-column mb-4">
                             <button class="mx-2 filter-btn active" data-filter="all">All</button>
                             <button class="mx-2 filter-btn" data-filter="web">Web
                                 Design</button>
@@ -217,10 +224,12 @@
                                 Development</button>
                         </div>
                         <div class="row g-4">
-                            <div class="col-md-4 portfolio-item" data-category="web">
-                                <div class="card h-100">
-                                    <img src="images/Graphic_Design_img-1.webp" class="card-img-top portfolio-img"
+                            <div class="col-md-4 portfolio-item" data-category="app">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/1.jpg" class="card-img-top portfolio-img"
                                         alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 1</h5>
                                         <p class="card-text">Brief description of the project.</p>
@@ -228,21 +237,61 @@
                                 </div>
                             </div>
                             <div class="col-md-4 portfolio-item" data-category="graphic">
-                                <div class="card h-100">
-                                    <img src="images/home-poster.avif" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 2" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/2.jpg" class="card-img-top portfolio-img"
+                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 2</h5>
                                         <p class="card-text">Brief description of the project.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 portfolio-item" data-category="app">
-                                <div class="card h-100">
-                                    <img src="images/Hero-BG-PA.avif" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 3" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                            <div class="col-md-4 portfolio-item" data-category="web">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/3.jpg" class="card-img-top portfolio-img"
+                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 3</h5>
+                                        <p class="card-text">Brief description of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 portfolio-item" data-category="app">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/3.jpg" class="card-img-top portfolio-img"
+                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Title 4</h5>
+                                        <p class="card-text">Brief description of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 portfolio-item" data-category="graphic">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/1.jpg" class="card-img-top portfolio-img"
+                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Title 5</h5>
+                                        <p class="card-text">Brief description of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 portfolio-item" data-category="web">
+                                <div class=" h-100">
+                                    <div class="portfolio-img-box">
+                                        <img src="images/2.jpg" class="card-img-top portfolio-img"
+                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Title 6</h5>
                                         <p class="card-text">Brief description of the project.</p>
                                     </div>
                                 </div>
@@ -402,7 +451,7 @@
            
             <section id="scrollspyHeading5" class="section">
                 <section class="contact" id="contact">
-                    <div class="container " style="padding-top: 5rem;">
+                    <div class="container " style="padding-top: 3rem;">
                         <div class="heading text-center">
                             <h2>Contact
                                 <span> Us </span>
@@ -545,7 +594,7 @@
                 dots: true,         // Show navigation dots
                 infinite: true,     // Infinite looping
                 speed: 300,         // Slide transition speed
-               // autoplay: true,
+                autoplay: true,
                 slidesToShow: 3,    // Number of slides to show at once
                 slidesToScroll: 1,  // Number of slides to scroll
                 responsive: [       // Responsive settings
