@@ -293,6 +293,10 @@ section starts
   top: 0;
   height: 100%;
 }
+.feature-content p {
+  scale: 1;
+  opacity: 1;
+}
 
 .service-box .icon {
   width: 70px;
@@ -801,11 +805,11 @@ loader starts
 animation starts
 ------------------------------------------- */
  @media (prefers-reduced-motion: no-preference) {
-  p , h1, h2, h5, a, ul li, button{
+  p, h1, h2,h3, h6, h5, h6, ul li, .filter-btn, .about img , .services-section .col-sm-6{
     scale: .8; 
     opacity: 0;
     animation:fade-in linear forwards;
-    animation-timeline: view(100px) ;
+    animation-timeline: view(150px) ;
     animation-range: entry;
   }
   @keyframes fade-in {
@@ -824,17 +828,7 @@ animation starts
        transform: translate(0px);
   }
 }
-.hero-right-img {
-  animation: img-rotate linear forwards;
-  animation-timeline: view();
-  rotate: 330deg;
-  transition: rotate 2s ease, opacity 1s ease ;
-}
-@keyframes img-rotate {
-  to {
-    rotate: 0deg;
-  }
-}
+
 
 } 
 
