@@ -242,7 +242,7 @@ section starts
 
 
 .about {
-  padding: 60px 0;
+ margin: 60px 0;
 }
 
 .about .container {
@@ -402,9 +402,7 @@ section starts
 .custom-modal-body .portfolio-img-box {
   flex-grow: 1;
 }
-.custom-modal-body .portfolio-img {
-  object-fit:contain;
-}
+
 #modalContent >  div {
   display: flex;
   flex-direction: column;
@@ -428,7 +426,6 @@ section starts
 }
 .custom-modal-body {
   padding: 0;
-  height: 90vh !important;
   overflow: hidden;
 }
 .custom-modal-content {
@@ -506,6 +503,50 @@ section starts
 .testimonials .item .icon {text-align: center;}
 .testimonials .item .icon i {font-size: 32px;color: #FFD832;}
 /* review slider ends */
+
+
+
+/* about me starts */
+.about-me .btn-primary.btn-outline {
+  background: transparent;
+  color: #4d4d4d;
+  border: 1px solid #d9d9d9;
+}
+.about-me p, span {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  font-family: "Karla", Arial, sans-serif;
+}
+.about-me .about-desc .rotate {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+.about-me .about-desc .rotate .heading {
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  transform-origin: left top 0;
+  position: relative;
+}
+.about-desc .rotate .heading:after {
+  position: absolute;
+  top: 8px;
+  right: -40px;
+  content: '';
+  background: #000;
+  width: 40px;
+  height: 1px;
+}
+/* about me ends */
 
 
 /* contact section starts */
@@ -591,6 +632,7 @@ section starts
   text-decoration: none;
 }
 /* contact section ends */
+
 
 /* footer starts */
 footer {
