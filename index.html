@@ -446,11 +446,28 @@
                     </div>
                 </section>
             </section>
+            <hr>
 
-           <section>
+           <section class="py-5">
+            <div class="founder p-3">
+                <h1 class="display-4">Founder</h1>
+                <div class="row">
+                      <div class="col-12 col-md-4 my-2">
+                        <div>
+                            <img class="about-fnd" src="./images/modelimg.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 my-2">
+                        <h1 class="display-4">About Me</h1>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, vel.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor facere, libero optio cum rerum id laboriosam ullam officiis facilis!</p>
+                      </div>
+                </div>
+            </div>
             
            </section>
-           
+
             <section id="scrollspyHeading5" class="section">
                 <section class="contact" id="contact">
                     <div class="container " style="padding-top: 3rem;">
@@ -498,27 +515,30 @@
 
                             <div class="col-md-7 mt-4 mt-md-0">
 
-                                <form method="POST" id="form">
+                                <form method="POST" id="form" onsubmit="return validateForm()">
                                     <!-- Replace with your Access Key -->
                                     <input type="hidden" name="access_key" value="4872691c-d507-4472-8dc1-21f136606fbd">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Name">
+                                            <input type="text" name="name" class="form-control" placeholder="Name" id="name" required>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="email" name="email" class="form-control" placeholder="Email">
+                                            <input type="email" name="email" class="form-control" placeholder="Email" id="email" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="phone" class="form-control" placeholder="Phone Number" id="phone" required>
                                         </div>
                                         <div class="col-sm-12">
-                                            <input type="text" name="submit" class="form-control" placeholder="Subject">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" name="Message" rows="5" id="comment"
-                                            placeholder="Message"></textarea>
+                                        <textarea class="form-control" name="Message" rows="5" id="comment" placeholder="Message" required></textarea>
                                     </div>
                                     <button class="btn btn-block" type="submit">Send Now!</button>
                                     <div id="result"></div>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
