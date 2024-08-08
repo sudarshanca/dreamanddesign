@@ -208,6 +208,9 @@ section starts
   display: flex;
   align-items: center;
 }
+.section {
+  overflow: hidden;
+}
 
 
 
@@ -866,41 +869,6 @@ loader starts
 loader starts
 ------------------------------------------- */
 
-/* -------------------------------------------
-animation starts
-------------------------------------------- */
- @media (prefers-reduced-motion: no-preference) {
- .about img{
-    scale: .8; 
-    opacity: 0;
-    animation:fade-in linear forwards;
-    animation-timeline: view(150px) ;
-    animation-range: entry;
-  }
-  @keyframes fade-in {
-     to { scale: 1; opacity: 1;}
-  }
- .about .right {
-  opacity: 0;
-  animation: side-fade linear forwards;
-  animation-timeline: view(100px) ;
-  animation-range: entry;
-  transform: translatey(100px);
- }
- @keyframes side-fade {
-  to { scale: 1; 
-       opacity: 1;
-       transform: translate(0px);
-  }
-}
-
-
-} 
-
-
-/* -------------------------------------------
-animation ends
-------------------------------------------- */
 /* -------------------------------------------
 fonts start
 ------------------------------------------- */

@@ -15,6 +15,7 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <script src="https://kit.fontawesome.com/d887478cd5.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
             <div id="nav-black-bg" class="nav-black-bg" onclick="headerSidebar()"></div>
             <div id="nav-items" class="nav-items">
                 <ul id="navbar-example2" class="nav">
-                    <li class="nav-item"><a class="nav-link"  onclick="headerSidebar()"
+                    <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading1">Home</a></li>
                     <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading2">About</a></li>
@@ -44,7 +45,7 @@
                             href="#scrollspyHeading3">Service</a></li>
                     <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading4">Portfolio</a></li>
-             <!--        <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
+                    <!--        <li class="nav-item"><a class="nav-link" onclick="headerSidebar()"
                             href="#scrollspyHeading5">Work</a></li> -->
                 </ul>
                 <a href="#contact" class="button1 type1">
@@ -60,13 +61,13 @@
             <section id="scrollspyHeading1" class="section  section1">
                 <div class="my-md-5 container">
                     <div class="row hero-div">
-                        <div class="col-12 col-md-6 ">
+                        <div class="col-12 col-md-6">
                             <div class="hero-left d-flex flex-column justify-content-center  h-100 w-100">
-                                <div class="mb-3"><img src="./images/logo1.png" style="width: 30%;" alt=""></div>
-                                <h1 class="font-1">Full fill your Dreams with our Efforts</h1>
-                                <p class="font-2">We help our Clients by providing memorabel experience with our efforts
+                                <div class="mb-3"><img data-aos="fade-up" src="./images/logo1.png" style="width: 30%;" alt=""></div>
+                                <h1 class="font-1" data-aos="fade-up" data-aos-delay="200">Full fill your Dreams with our Efforts</h1>
+                                <p class="font-2" data-aos="fade-up" data-aos-delay="400">We help our Clients by providing memorabel experience with our efforts
                                 </p>
-                                <a href="#contact" class="button1 type1" style="width: fit-content;">
+                                <a data-aos="flip-up" data-aos-delay="600" href="#contact" class="button1 type1" style="width: fit-content;">
                                     <span href="#contact" class="btn-txt">Contact US</span>
                                 </a>
                             </div>
@@ -74,7 +75,7 @@
                         <div
                             class="col-12 col-md-6  d-flex align-items-center justify-content-center justify-content-md-end ">
 
-                            <img  src="./images/hero-right-icon.png" class="hero-right-img" style="width: 80%;" alt="">
+                            <img src="./images/hero-right-icon.png" data-aos="zoom-in-left" class="hero-right-img" style="width: 80%;" alt="">
 
                         </div>
                     </div>
@@ -87,13 +88,13 @@
                 <div class="py-3 container about">
                     <div class="row">
                         <div class="col-md-6 left">
-                            <img src="./images/Graphic_Design_img-1.webp" alt="About Image" class="img-fluid rounded">
+                            <img src="./images/Graphic_Design_img-1.webp" data-aos="fade-up" alt="About Image" class="img-fluid rounded">
                         </div>
                         <div class="col-md-6 right">
-                            <h2 class="display-4">About Us</h2>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            <h2 class="display-4 " data-aos="fade-up" data-aos-delay="100">About Us</h2>
+                            <p class="lead" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
+                            <p data-aos="fade-up" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et
                                 dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
                                 Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
                             <!--   <a href="#!" class="btn btn-primary">Learn More</a> -->
@@ -111,7 +112,8 @@
                             <div class="col-lg-6">
                                 <div class="service-title">
                                     <h2>What I Do</h2>
-                                    <p>Unlock the potential of your brand with strategic digital marketing solutions tailored to your business needs.</p>
+                                    <p>Unlock the potential of your brand with strategic digital marketing solutions
+                                        tailored to your business needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +126,9 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>Digital markating</h5>
-                                        <p>Unlock the potential of your brand with strategic digital marketing solutions tailored to your business needs.</p>
-                                </div>
+                                        <p>Unlock the potential of your brand with strategic digital marketing solutions
+                                            tailored to your business needs.</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- / -->
@@ -137,7 +140,8 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>Social Media markating</h5>
-                                        <p>Engage and grow your audience with impactful social media campaigns designed to boost your online presence.</p>
+                                        <p>Engage and grow your audience with impactful social media campaigns designed
+                                            to boost your online presence.</p>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +154,8 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>Advertising</h5>
-                                        <p>Drive results with creative advertising strategies that captivate your target audience and enhance brand visibility.</p>
+                                        <p>Drive results with creative advertising strategies that captivate your target
+                                            audience and enhance brand visibility.</p>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +168,8 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>graphic Design</h5>
-                                        <p>Create branding content like posters, social media posts, logos, and brochures to make a great first impression and grab attention.</p>
+                                        <p>Create branding content like posters, social media posts, logos, and
+                                            brochures to make a great first impression and grab attention.</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +182,8 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>Photography</h5>
-                                        <p>Transform special occasions into lasting memories with our detailed and artistic photography approach.</p>
+                                        <p>Transform special occasions into lasting memories with our detailed and
+                                            artistic photography approach.</p>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +196,8 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5>Event Management</h5>
-                                        <p>Create unforgettable moments with our meticulous event management, ensuring every aspect is perfectly coordinated.</p>
+                                        <p>Create unforgettable moments with our meticulous event management, ensuring
+                                            every aspect is perfectly coordinated.</p>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +216,8 @@
                             <div class="col-lg-6">
                                 <div class="Portfolio-title">
                                     <h2 class="display-4">Portfolio</h2>
-                                    <p>Unlock the potential of your brand with strategic digital marketing solutions tailored to your business needs.</p>
+                                    <p>Unlock the potential of your brand with strategic digital marketing solutions
+                                        tailored to your business needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +236,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/1.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 1</h5>
@@ -239,7 +249,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/2.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 2</h5>
@@ -251,7 +262,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/3.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 3</h5>
@@ -263,7 +275,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/3.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 4</h5>
@@ -275,7 +288,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/1.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 5</h5>
@@ -287,7 +301,8 @@
                                 <div class=" h-100">
                                     <div class="portfolio-img-box">
                                         <img src="images/2.jpg" class="card-img-top portfolio-img"
-                                        alt="Portfolio Item 1" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                            alt="Portfolio Item 1" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">Project Title 6</h5>
@@ -340,8 +355,9 @@
                                 </div>
                             </div>
                             <p>They r totally amazing 🤩 worth it <br>
-                                Forever goto place for portrait & sketches special mention to Karthik he’s so so kind he Listens our suggestions<br>
-                                
+                                Forever goto place for portrait & sketches special mention to Karthik he’s so so kind he
+                                Listens our suggestions<br>
+
                                 U made my dream come true moment ❤️</p>
                             <div class="icon">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
@@ -362,10 +378,11 @@
                                         <i class="fa fa-star" style="color: #89888820 !important;"></i>
                                     </div>
                                     <p>Keerthiraj R</p>
-                                  
+
                                 </div>
                             </div>
-                            <p>The assigned work will be completed in given time... And there charges are also budget friendly... They will satisfy you by there work and output</p>
+                            <p>The assigned work will be completed in given time... And there charges are also budget
+                                friendly... They will satisfy you by there work and output</p>
                             <div class="icon">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
                             </div>
@@ -387,14 +404,15 @@
                                     <p>C Joyson Rony</p>
                                 </div>
                             </div>
-                            <p>Very Geniune Service•Polite Interaction•Perfection In Work•Punctual In Giving The Output •Availability
+                            <p>Very Geniune Service•Polite Interaction•Perfection In Work•Punctual In Giving The Output
+                                •Availability
                                 2</p>
                             <div class="icon">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
                             </div>
                         </div>
                         <!-- Single Ends -->
-                          <!-- Single Starts -->
+                        <!-- Single Starts -->
                         <div class="item">
                             <div class="profile">
                                 <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
@@ -408,18 +426,19 @@
                                         <i class="fa fa-star" style="color: #89888820 !important;"></i>
                                     </div>
                                     <p>Keerthiraj R</p>
-                                  
+
                                 </div>
                             </div>
-                            <p>The assigned work will be completed in given time... And there charges are also budget friendly... They will satisfy you by there work and output</p>
+                            <p>The assigned work will be completed in given time... And there charges are also budget
+                                friendly... They will satisfy you by there work and output</p>
                             <div class="icon">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
                             </div>
                         </div>
                         <!-- Single Ends -->
 
-                         <!-- Single Starts -->
-                         <div class="item">
+                        <!-- Single Starts -->
+                        <div class="item">
                             <div class="profile">
                                 <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"
                                     alt="">
@@ -434,23 +453,24 @@
                                     <p>C Joyson Rony</p>
                                 </div>
                             </div>
-                            <p>Very Geniune Service•Polite Interaction•Perfection In Work•Punctual In Giving The Output •Availability
+                            <p>Very Geniune Service•Polite Interaction•Perfection In Work•Punctual In Giving The Output
+                                •Availability
                                 2</p>
                             <div class="icon">
                                 <i class="fa fa-quote-right" aria-hidden="true"></i>
                             </div>
                         </div>
                         <!-- Single Ends -->
-                     
-    
+
+
                     </div>
                 </section>
             </section>
 
-           <section>
-            
-           </section>
-           
+            <section>
+
+            </section>
+
             <section id="scrollspyHeading5" class="section">
                 <section class="contact" id="contact">
                     <div class="container " style="padding-top: 3rem;">
@@ -475,7 +495,7 @@
                                         <i class="fas fa-mobile-alt"></i>
                                         <h4 class="d-inline-block">PHONE :
                                             <br>
-                                         <a href="tel:+918317320962">+91 8317320962</a>
+                                            <a href="tel:+918317320962">+91 8317320962</a>
                                         </h4>
                                     </div>
                                     <!-- Info-2 -->
@@ -487,7 +507,7 @@
                                         </h4>
                                     </div>
                                     <!-- Info-3 -->
-                                   <!--  <div class="info">
+                                    <!--  <div class="info">
                                         <i class="fas fa-map-marker-alt"></i>
                                         <h4 class="d-inline-block">ADDRESS :<br>
                                             <span>6743 last street , Abcd, Xyz</span>
@@ -570,7 +590,7 @@
                                 <li><a href="#scrollspyHeading2">About</a></li>
                                 <li><a href="#scrollspyHeading3">Service</a></li>
                                 <li><a href="#scrollspyHeading4">Portfolio</a></li>
-                               <!--  <li><a href="#scrollspyHeading5">Work</a></li> -->
+                                <!--  <li><a href="#scrollspyHeading5">Work</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -630,6 +650,19 @@
 
 
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 100, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>
