@@ -551,6 +551,25 @@ section starts
 }
 /* about me ends */
 
+/* founder starts */
+
+.founder .row > div:first-child div{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.founder .row > div:last-child{
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+}
+.founder .about-fnd{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+/* founder ends */
 
 /* contact section starts */
 .contact {

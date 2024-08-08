@@ -104,45 +104,82 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Validation function
+function validateForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const subject = document.getElementById('subject').value;
+    const comment = document.getElementById('comment').value;
     
-// form start
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^[0-9]{10}$/;
+
+    if (!name) {
+        alert("Please enter your name");
+        return false;
+    }
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+    if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number");
+        return false;
+    }
+ /*    if (!subject) {
+        alert("Please enter a subject");
+        return false;
+    }
+    if (!comment) {
+        alert("Please enter a message");
+        return false;
+    } */
+    return true;
+}
+
+// Form submission
 const form = document.getElementById('form');
 const result = document.getElementById('result');
 
 form.addEventListener('submit', function(e) {
-    const formData = new FormData(form);
     e.preventDefault();
 
+    if (!validateForm()) {
+        return;
+    }
+
+    const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    result.innerHTML = "Please wait..."
+    result.innerHTML = "Please wait...";
 
     fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = json.message;
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+    .then(async (response) => {
+        const json = await response.json();
+        if (response.status === 200) {
+            result.innerHTML = json.message;
+        } else {
+            console.log(response);
+            result.innerHTML = json.message;
+        }
+    })
+    .catch(error => {
+        console.log(error);
+        result.innerHTML = "Something went wrong!";
+    })
+    .finally(() => {
+        form.reset();
+        setTimeout(() => {
+            result.style.display = "none";
+        }, 3000);
+    });
 });
