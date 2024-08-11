@@ -10,8 +10,14 @@
 :root {
   --blue: #37b2c5;
   --orange: #ff542c;
-  --white: #ffffff;
   --black: #000;
+  --white: #FFF;
+  --pinkish-red: #C35A74;
+  --medium-blue: #307BAA;
+  --greenish-blue: #53BAB5;
+  --bright-orange: #FF7445;
+  --white-smoke: #F5F5F4;
+  --dark-gray: #7D7C7C;
 }
 
 /* hero bachgroung */
@@ -132,7 +138,6 @@ header.active {
     left: 30%;
     background-color: var(--white);
     transition: all .5s ease;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.147);
     flex-direction: column;
     align-items: start;
     padding: 1rem;
@@ -149,6 +154,7 @@ header.active {
 
   .nav-items.active {
     transform: translateX(0px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.147);
   }
 
   .nav-black-bg {
@@ -252,9 +258,6 @@ footer {
 /* about starts */
 
 
-.about {
- margin: 60px 0;
-}
 
 .about .container {
   max-width: 1100px;
@@ -514,6 +517,169 @@ footer {
 .testimonials .item .icon {text-align: center;}
 .testimonials .item .icon i {font-size: 32px;color: #FFD832;}
 /* review slider ends */
+
+/* price catologue starts */
+
+.price-catologue section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: var(--white-smoke);
+}
+
+.price-catologue .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin:  100px auto;
+}
+
+.price-catologue .box{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 586px;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: var(--white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.price-catologue .title{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   margin-bottom: 0;
+    color: var(--white-smoke);
+}
+
+.price-catologue .basic .title{
+    background: var(--pinkish-red);
+}
+
+.price-catologue .standard .title{
+    background: var(--medium-blue);
+}
+
+.price-catologue .business .title{
+    background: var(--greenish-blue);
+}
+
+.price-catologue .view{
+    display: block;
+    width: 100%;
+    padding: 30px 0 20px;
+
+    background: var(--white-smoke);
+}
+
+.price-catologue .icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon img{
+    width: 100px;
+}
+
+.cost{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.price-catologue .amount{
+    font-size: 2.8em;
+    font-weight: bolder;
+}
+
+.price-catologue .detail{
+    margin: auto 0 auto 5px;
+    width: 70px;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 15px;
+    color: #7D7C7C;
+}
+
+.price-catologue .description{
+    margin: 30px auto;
+    font-size: 0.8em;
+    color: #7D7C7C;
+}
+
+.price-catologue ul{
+    list-style: none;
+}
+
+.price-catologue li{
+    margin-top: 10px;
+}
+
+.price-catologue li::before{
+    content: "";
+    background-image: url("https://i.postimg.cc/ht7g996V/check.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.price-catologue .button{
+    margin: 0 auto 30px;
+}
+
+.price-catologue button{
+    height: 40px;
+    width: 250px;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #7D7C7C;
+    border: 2px solid var(--dark-gray);
+    border-radius: 50px;
+
+    background: transparent;
+}
+
+.price-catologue button:hover{
+    color: var(--white-smoke);
+    transition: 0.5s;
+    border: none;
+
+    background: var(--bright-orange);
+}
+
+/* Responsiveness:Start */
+@media screen and (max-width:970px) {
+  .price-catologue .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .price-catologue .standard, .business{
+        margin-top: 25px;
+    }
+}
+/* Responsiveness:End */
+
+/* price catologue ends */
+
 
 
 
